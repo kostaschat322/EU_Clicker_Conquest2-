@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background: #1e2023;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+#topbar {
+  background: #2c2f33;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #444;
+}
+
+.res {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.res img {
+  width: 22px;
+  height: 22px;
+}
+
+#map {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#map img {
+  width: 85%;
+  border: 2px solid #333;
+}
+
+#info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  padding: 10px;
+}
+
+#attackBtn {
+  margin-top: 5px;
+  padding: 6px 14px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#attackBtn:disabled {
+  background: #555;
+  cursor: default;
+}

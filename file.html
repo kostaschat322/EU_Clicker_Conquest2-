@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>EU Clicker Conquest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="topbar">
+    <div class="res"><img src="icons/wood.png"><span id="wood">0</span></div>
+    <div class="res"><img src="icons/stone.png"><span id="stone">0</span></div>
+    <div class="res"><img src="icons/food.png"><span id="food">0</span></div>
+    <div class="res"><img src="icons/gold.png"><span id="gold">10</span></div>
+    <div class="res"><img src="icons/sword.png"><span id="soldiers">0</span></div>
+  </div>
+
+  <div id="map">
+    <img src="map_europe_states.png" usemap="#europe" alt="Map of Europe">
+    <map name="europe">
+      <area shape="poly" coords="120,140,130,170,150,160" data-region="FranceNorth">
+      <area shape="poly" coords="250,250,260,280,275,270" data-region="ItalyNorth">
+      <area shape="poly" coords="200,100,230,110,220,140" data-region="GermanyWest">
+    </map>
+  </div>
+
+  <div id="info">
+    <h3 id="regionName">Επίλεξε περιοχή</h3>
+    <p id="regionBonus"></p>
+    <button id="attackBtn" disabled>Επίθεση</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
